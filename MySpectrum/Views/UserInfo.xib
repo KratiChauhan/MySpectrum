@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="cxk-wN-pdQ" customClass="UserInfo">
+            <rect key="frame" x="0.0" y="0.0" width="545" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="545" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqJ-8W-hyM">
+                        <rect key="frame" x="20" y="5" width="505" height="145"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="154">
+                                <rect key="frame" x="20" y="20" width="465" height="27.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="User Name">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="212">
+                                <rect key="frame" x="20" y="57.5" width="465" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="123 Torrey Hills">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="243">
+                                <rect key="frame" x="20" y="88" width="465" height="37"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="651-429-8567">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="154" secondAttribute="trailing" constant="20" id="2gp-yI-Ccc"/>
+                            <constraint firstItem="212" firstAttribute="top" secondItem="154" secondAttribute="bottom" constant="10" id="UmS-VN-2XZ"/>
+                            <constraint firstItem="154" firstAttribute="leading" secondItem="PqJ-8W-hyM" secondAttribute="leading" constant="20" id="Uol-Na-Jej"/>
+                            <constraint firstItem="212" firstAttribute="leading" secondItem="PqJ-8W-hyM" secondAttribute="leading" constant="20" id="d05-dm-Knn"/>
+                            <constraint firstAttribute="bottom" secondItem="243" secondAttribute="bottom" constant="20" id="lGM-J4-0JS"/>
+                            <constraint firstAttribute="trailing" secondItem="243" secondAttribute="trailing" constant="20" id="rsL-Pr-AZ8"/>
+                            <constraint firstItem="243" firstAttribute="leading" secondItem="PqJ-8W-hyM" secondAttribute="leading" constant="20" id="uP0-c2-bVu"/>
+                            <constraint firstItem="243" firstAttribute="top" secondItem="212" secondAttribute="bottom" constant="10" id="x6g-Sk-yNq"/>
+                            <constraint firstAttribute="trailing" secondItem="212" secondAttribute="trailing" constant="20" id="zI5-Ll-2Hr"/>
+                            <constraint firstItem="154" firstAttribute="top" secondItem="PqJ-8W-hyM" secondAttribute="top" constant="20" id="zmA-kt-mAu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PqJ-8W-hyM" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="R62-Bn-cho"/>
+                    <constraint firstItem="PqJ-8W-hyM" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="5" id="UqK-dC-u2i"/>
+                    <constraint firstAttribute="bottom" secondItem="PqJ-8W-hyM" secondAttribute="bottom" constant="5" id="ddm-qA-hAb"/>
+                    <constraint firstAttribute="trailing" secondItem="PqJ-8W-hyM" secondAttribute="trailing" constant="20" id="spD-Q6-qWj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MainView" destination="PqJ-8W-hyM" id="name-outlet-PqJ-8W-hyM"/>
+                <outlet property="lblAddress" destination="212" id="name-outlet-212"/>
+                <outlet property="lblPhone" destination="243" id="name-outlet-243"/>
+                <outlet property="lblUserName" destination="154" id="name-outlet-154"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="35.825892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
